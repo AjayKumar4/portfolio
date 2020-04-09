@@ -1,37 +1,34 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "http://AjayKumar4.github.io/portfolio/",
   "private": true,
   "dependencies": {
-    "axios": "^0.18.0",
-    "babel-polyfill": "^6.26.0",
-    "materialize-css": "^1.0.0",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "react-loadable": "^5.5.0",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "^2.0.4"
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1",
-    "gh-pages": "^2.0.1"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
